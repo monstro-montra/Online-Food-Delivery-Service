@@ -6,17 +6,22 @@ public class Main {
         System.out.println("Shopping cart size: " + run.cart.getSize());
         run.cart.isFull(); //check whether the cart is full
         run.populateCart(); //run populate cart method
-        run.cart.removeLast(); //this method will remove the last element added to the bag.
+        //run.cart.removeLast(); //this method will remove the last element added to the bag.
 
         run.cart.displayBag();
 
         System.out.println("Total: " + run.cart.calculatePrice());
         System.out.println("\nConverting to Array!");
-
         Item[] items = run.cart.toArray();
         for(int i = 0; i < items.length; i++){
             System.out.println("Item " + i + "\n" + items[i].itemToString());
         }
+
+        //test populating 50 items total
+        for(int i = 0; i < 4; i ++){
+            run.populateCart();
+        }
+        run.cart.isFull();
 
     }
 
