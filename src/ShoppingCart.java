@@ -3,13 +3,13 @@ import java.util.NoSuchElementException;
 public class ShoppingCart implements BagADT{
     //fields
     private int numberOfItems;
-    private final int Default_Capacity = 50;
-    private Item[] myBag;
+    private final Item[] myBag;
 
 
     public ShoppingCart(){ //0 args constructor
         numberOfItems = 0; // starting number of products
-        myBag = new Item[Default_Capacity]; //initialize myBag data type Parameter of objects at size 50
+        int default_Capacity = 50;
+        myBag = new Item[default_Capacity]; //initialize myBag data type Parameter of objects at size 50
     }
 
 
