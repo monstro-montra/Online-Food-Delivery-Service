@@ -16,10 +16,10 @@ public class ShoppingCart implements BagADT{
     //implemented methods
     @Override
     public void add(Object item) {
-        myBag[numberOfItems] = (Item) item;
-        System.out.println("New item added: " + myBag[numberOfItems].getName());
-        numberOfItems++;
-        System.out.println("Number of items: " + getNumberOfItems() + "\n");
+        myBag[numberOfItems] = (Item) item; //set element at numberOfItems = to item added as a parameter
+        System.out.println("New item added: " + myBag[numberOfItems].getName()); //call getName for item
+        numberOfItems++; //add one to number of Items
+        System.out.println("Number of items: " + getNumberOfItems() + "\n"); //print how many items there are in total
     }
 
     @Override
