@@ -1,12 +1,13 @@
 public class Toy extends Item{
 
     public Toy(String type, String name, Double price){ //parameterized constructor
-        this.type = type;
-        this.name = name;
-        this.price = price;
+        this.setType(type);
+        this.setName(name);
+        this.setPrice(price);
     }
 
     public Toy() { //0 args constructor.
 
     }
+
 }

@@ -1,7 +1,9 @@
 public interface BagADT<T> {
-    void add(T type, int howMany);
-    void discard();
+    void add(T type);
+    T removeLast();
     int getSize();
-    void toArray();
+    T toArray();
     void isFull();
+
+    void displayBag();
 }

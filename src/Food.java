@@ -1,8 +1,8 @@
 public class Food extends Item{
     public Food(String type, String name, Double price){ //parameterized constructor
-        this.type = type;
-        this.name = name;
-        this.price = price;
+        this.setType(type);
+        this.setName(name);
+        this.setPrice(price);
     }
 
     public Food() { //0 args constructor.
